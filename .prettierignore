@@ -1,0 +1,6 @@
+#file which ignores prettier settings
+public
+bootstrap
+config
+lang
+routes
