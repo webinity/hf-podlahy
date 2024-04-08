@@ -1,0 +1,58 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+
+html {
+    font-size: 16px;
+    line-height: normal; 
+}
+
+body {
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+figure {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    padding: 0;
+    margin: 0;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+a, button {
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+address {
+    font-style: normal;
+}

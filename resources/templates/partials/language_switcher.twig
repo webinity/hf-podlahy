@@ -1,0 +1,13 @@
+<form action="/locale" method="post">
+    <select name="locale" id="locales">
+        {% for locale in available_locales %}
+            <option value="{{ locale }}"
+                    {% if app_locale == locale %}
+                        selected="selected"
+                    {% endif %}
+            >{{ locale }}
+            </option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Submit">
+</form>

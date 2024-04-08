@@ -1,0 +1,24 @@
+{
+    "name": "webinity/skeleton",
+    "description": "The webinity skeleton",
+    "autoload": {
+        "psr-4": {
+            "Webinity\\App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "vrerabek",
+            "email": "vrerabek@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/webinity/framework"
+        }
+    ],
+    "require": {
+        "webinity/framework": "1.0.*"
+    }
+}

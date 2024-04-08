@@ -1,0 +1,42 @@
+{
+    "name": "webinity-skeleton",
+    "version": "1.0.0",
+    "description": "Skeleton for making websites and basic web apps",
+    "main": "index.js",
+    "scripts": {
+        "dev": "npx mix",
+        "prettier": "npx prettier --write './resources/templates/*.twig'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/webinity/webinity-skeleton.git"
+    },
+    "keywords": [
+        "html",
+        "scss",
+        "php",
+        "javascript",
+        "website",
+        "structure"
+    ],
+    "author": "Vojtěch Řeřábek, Daniel Bursa",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/webinity/webinity-skeleton/issues"
+    },
+    "homepage": "https://github.com/webinity/webinity-skeleton#readme",
+    "devDependencies": {
+        "laravel-mix": "^6.0.41",
+        "prettier": "2.7.0",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.49.0",
+        "sass-loader": "^12.4.0",
+        "vue-loader": "^15.9.8",
+        "vue-template-compiler": "^2.6.14"
+    },
+    "dependencies": {
+        "axios": "^0.27.2",
+        "prettier-plugin-twig-melody": "^0.4.6",
+        "vue": "^2.6.14"
+    }
+}
