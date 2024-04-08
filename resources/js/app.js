@@ -1,11 +1,8 @@
-import Vue from 'vue';
+import { createApp } from 'vue';
+import Test from './components/Test.vue'; // Assuming Test.vue is your Vue component file
 
-import Test from './components/Test.vue';
+const app = createApp({});
 
+app.component('Test', Test);
 
-new Vue({
-    el: '#app',
-    components: {
-        Test,
-    },
-})
+app.mount('#app');
