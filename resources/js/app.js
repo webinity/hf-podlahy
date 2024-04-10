@@ -1,8 +1,10 @@
 import { createApp } from 'vue';
-import Test from './components/Test.vue'; // Assuming Test.vue is your Vue component file
+import Form from './components/Form.vue';
+import Slider from './components/Swiper.vue';
 
 const app = createApp({});
 
-app.component('Test', Test);
+app.component('ContactForm', Form);
+app.component('Slider', Slider);
 
 app.mount('#app');
