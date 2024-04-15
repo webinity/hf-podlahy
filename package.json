@@ -26,17 +26,18 @@
     },
     "homepage": "https://github.com/webinity/webinity-skeleton#readme",
     "devDependencies": {
+        "@vue/compiler-sfc": "^3.1.0",
         "laravel-mix": "^6.0.41",
         "prettier": "2.7.0",
         "resolve-url-loader": "^5.0.0",
         "sass": "^1.49.0",
         "sass-loader": "^12.4.0",
-        "vue-loader": "^17.4.2",
-        "@vue/compiler-sfc": "^3.1.0"
+        "vue-loader": "^17.4.2"
     },
     "dependencies": {
+        "@vue/compat": "^3.1.0",
         "axios": "^1.6.8",
-        "vue": "^3.1.0",
-        "@vue/compat": "^3.1.0"
+        "swiper": "^11.1.1",
+        "vue": "^3.1.0"
     }
 }

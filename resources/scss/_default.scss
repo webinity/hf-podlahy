@@ -20,18 +20,37 @@ p {
 html {
     font-family: 'Caviar Dreams', sans-serif;
     font-size: 16px;
-    line-height: normal; 
+    line-height: normal;
 }
 
 body {
     position: relative;
     scroll-behavior: smooth;
+    background: #fff;
+    overflow-x: hidden;
 }
 
 h1,
 h2,
 h3 {
     font-family: 'Claris Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2, h3 {
+    font-size: 1.5;
+}
+
+p {
+    font-weight: 300;
+}
+
+strong {
+    font-weight: 700;
 }
 
 figure {
@@ -62,4 +81,9 @@ a, button {
 
 address {
     font-style: normal;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
 }

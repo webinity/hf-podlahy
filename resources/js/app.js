@@ -8,3 +8,24 @@ app.component('ContactForm', Form);
 app.component('Slider', Slider);
 
 app.mount('#app');
+
+//basic js
+//toggle navbar
+const navbar = document.querySelector('nav')
+const navbarContent = document.querySelector('.nav-content')
+const open = document.querySelector('.open');
+const close = document.querySelector('.close');
+
+open.addEventListener('click', () => {
+    navbar.classList.add('active');
+    navbarContent.classList.add('active');
+    close.style.display = 'flex'
+    open.style.display = 'none'
+});
+
+close.addEventListener('click', () => {
+    navbar.classList.remove('active');
+    navbarContent.classList.remove('active');
+    open.style.display = 'flex'
+    close.style.display = 'none'
+});

@@ -33,9 +33,22 @@
     transition: all 0.5s, transform 0.8s;
 }
 
-@mixin container($max-width: 1280px, $padding-horizontal: 3.25rem) { 
+@mixin container($max-width: 1280px, $padding-horizontal: 1.5rem) { 
     margin-left: auto;
     margin-right: auto;
     padding: 0 $padding-horizontal;
     max-width: $max-width;
+}
+
+@mixin uvozovky($top: initial, $bottom: initial, $left: initial, $right: initial, $rotate: rotate(0)) {
+    content: url('/assets/imgs/icons/uvozovky.webp');
+    position: absolute;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+    width: 4rem;
+    height: 3rem;
+    display: flex;
+    transform: $rotate;
 }
