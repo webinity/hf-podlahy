@@ -20,8 +20,6 @@
       }
     }"
     class="swiper-container"
-    @swiperprogress="onProgress"
-    @swiperslidechange="onSlideChange"
   >
     <swiper-slide>
       <figure>
@@ -89,19 +87,6 @@
 
   export default {
     setup() {
-      const onProgress = (e) => {
-        const [swiper, progress] = e.detail;
-        console.log(progress)
-      };
-
-      const onSlideChange = (e) => {
-        console.log('slide changed')
-      }
-
-      return {
-        onProgress,
-        onSlideChange,
-      };
     }
   }
 </script>

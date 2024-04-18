@@ -24,16 +24,22 @@
         <button type="submit">
             <span>Odeslat</span>
         </button>
+
+        <div class="success"><p>Vaše zpráva byla úspěšně doručena! Brzy Vám ozveme.</p></div>
+        <div class="error"><p>Omlouváme se, ale něco se pokazilo. Zkuste nám napsat přímo na email <a href="mailto:info@hfpodlahy.cz">info@hfpodlahy.cz</a></p></div>
+        <div class="error required">
+            <p>Tato pole jsou povinná a Vámi nevyplněná:</p>
+            <ul>
+                <li>neco</li>
+            </ul>
+        </div>
     </form>
 </template>
 
 <script>
 export default ({
     data() {
-        return {
-            message: 'Vue funguje',
-            info: null
-        }
+        return {}
     }
 })
 </script>

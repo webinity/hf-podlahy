@@ -20,7 +20,7 @@ p {
 
 
 html {
-    font-family: 'Caviar Dreams', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: normal;
     scroll-behavior: smooth;
@@ -51,7 +51,7 @@ h2, h3 {
     font-size: 1.5rem;
 
     @media screen and (min-width: $laptop) {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 }
 

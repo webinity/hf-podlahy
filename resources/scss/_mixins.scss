@@ -43,7 +43,10 @@
 }
 
 @mixin uvozovky($top: initial, $bottom: initial, $left: initial, $right: initial, $rotate: rotate(0)) {
-    content: url('/assets/imgs/icons/uvozovky.webp');
+    content: '';
+    background-image: url('/assets/imgs/icons/uvozovky.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     top: $top;
     bottom: $bottom;
