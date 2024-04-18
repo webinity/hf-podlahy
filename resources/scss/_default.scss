@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 html,
 body {
 	margin: 0;
@@ -21,11 +23,11 @@ html {
     font-family: 'Caviar Dreams', sans-serif;
     font-size: 16px;
     line-height: normal;
+    scroll-behavior: smooth;
 }
 
 body {
     position: relative;
-    scroll-behavior: smooth;
     background: #fff;
     overflow-x: hidden;
 }
@@ -39,10 +41,18 @@ h3 {
 
 h1 {
     font-size: 1.75rem;
+
+    @media screen and (min-width: $laptop) {
+        font-size: 4rem;
+    }
 }
 
 h2, h3 {
-    font-size: 1.5;
+    font-size: 1.5rem;
+
+    @media screen and (min-width: $laptop) {
+        font-size: 4rem;
+    }
 }
 
 p {

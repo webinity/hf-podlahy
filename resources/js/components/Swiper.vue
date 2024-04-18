@@ -13,6 +13,12 @@
     }"
     :modules="modules"
     :loop="true"
+    :breakpoints="{
+      '1200': {
+        slidesPerView: 3,
+        spaceBetween: 32,
+      }
+    }"
     class="swiper-container"
     @swiperprogress="onProgress"
     @swiperslidechange="onSlideChange"
