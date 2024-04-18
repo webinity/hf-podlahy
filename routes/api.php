@@ -66,8 +66,8 @@ return function (App $app){
 
             } catch (\Symfony\Component\Mailer\Exception\TransportExceptionInterface $e) {
                 // If send fails
-                $response->getBody()->write(json_encode(['error' => $e->getMessage()]));
-                //$response->getBody()->write(json_encode(['error' => 'Email se nepodařilo odeslat, zkuste to prosím později']));
+                //$response->getBody()->write(json_encode(['error' => $e->getMessage()]));
+                $response->getBody()->write(json_encode(['error' => 'Email se nepodařilo odeslat, zkuste to prosím později']));
                 return $response->withStatus(400);
             }
         }
