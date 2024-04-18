@@ -160,6 +160,18 @@ nav {
         &::after {
             @include uvozovky($bottom: -1rem, $right: 0, $rotate: rotate(180deg))
         }
+
+        &::before, &::after {
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
+            transition-delay: 0.5s;
+        }
+
+        &.loaded {
+            &::before, &::after {
+                opacity: 1;
+            }
+        }
     }
 
     p {
@@ -186,11 +198,13 @@ nav {
             margin-bottom: 10rem;
 
             &::before {
-                @include uvozovky($top: -7.5rem, $left: -3rem)
+                @include uvozovky($top: -7.5rem, $left: -3rem);
+                transition-delay: 1s;
             }
     
             &::after {
-                @include uvozovky($bottom: -6.5rem, $right: -1rem, $rotate: rotate(180deg))
+                @include uvozovky($bottom: -6.5rem, $right: -1rem, $rotate: rotate(180deg));
+                transition-delay: 1s;
             }
         }
     }

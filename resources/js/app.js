@@ -29,3 +29,8 @@ close.addEventListener('click', () => {
     open.style.display = 'flex'
     close.style.display = 'none'
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const h1Element = document.querySelector("h1");
+    h1Element.classList.add("loaded");
+});
