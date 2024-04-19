@@ -7,7 +7,7 @@
         <div class="tel-email">
             <div class="col">
                 <label for="email">E-mail:</label>
-                <input v-model="email" type="email" name="email" id="">
+                <input v-model="email" type="email" name="email" id="" required>
             </div>
 
             <div class="col">
@@ -22,17 +22,11 @@
         </div>
 
         <button @click="submit" type="button" id="submit">
-            <span>Odeslat</span>
+            <span id="span">Odeslat</span>
         </button>
 
         <div class="success" id="success-alert"><p>Vaše zpráva byla úspěšně doručena! Brzy Vám ozveme.</p></div>
-        <!-- <div class="error"><p>Omlouváme se, ale něco se pokazilo. Zkuste nám napsat přímo na email <a href="mailto:info@hfpodlahy.cz">info@hfpodlahy.cz</a>.</p></div> -->
-        <div class="error required" id="error-alert">
-            <!-- <p>Tato pole jsou povinná a Vámi nevyplněná:</p>
-            <ul>
-                <li>neco</li>
-            </ul> -->
-        </div>
+        <div class="error required" id="error-alert"></div>
     </form>
 </template>
 
@@ -51,11 +45,11 @@ export default ({
 
     methods: {
         submit() { 
-            let submitBtn = document.getElementById('submit')
+            let submitBtnSpan = document.getElementById('span')
             let successAlert = document.getElementById('success-alert')
             let errorAlert = document.getElementById('error-alert')
 
-            submitBtn.innerHTML = 'ODESÍLÁME...';
+            submitBtnSpan.innerHTML = 'ODESÍLÁME...';
             successAlert.style.display = 'none';
             errorAlert.style.display = 'none';
 
@@ -67,7 +61,7 @@ export default ({
               phone: this.phone
             })
             .then(response => {
-              submitBtn.innerHTML = 'Odeslat zprávu';
+              submitBtnSpan.innerHTML = 'ODESLAT';
               successAlert.style.display = 'block';
               this.message = null;
               this.name = null;
@@ -76,7 +70,7 @@ export default ({
             })
             .catch(function (error) {
               // handle error
-              submitBtn.innerHTML = 'ODESLAT';
+              submitBtnSpan.innerHTML = 'ODESLAT';
               var arr = error.response.data;
               var err = '';
               for (let el in arr) {

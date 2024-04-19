@@ -67,7 +67,7 @@ return function (App $app){
             } catch (\Symfony\Component\Mailer\Exception\TransportExceptionInterface $e) {
                 // If send fails
                 //$response->getBody()->write(json_encode(['error' => $e->getMessage()]));
-                $response->getBody()->write(json_encode(['error' => 'Email se nepodařilo odeslat, zkuste to prosím později']));
+                $response->getBody()->write(json_encode(['error' => 'Omlouváme se, ale něco se pokazilo. Zkuste nám napsat přímo na email info@hfpodlahy.cz nebo nám závoljte na 778 701 292.']));
                 return $response->withStatus(400);
             }
         }
