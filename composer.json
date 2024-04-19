@@ -19,6 +19,7 @@
         }
     ],
     "require": {
-        "webinity/framework": "1.0.*"
+        "webinity/framework": "1.0.*",
+        "symfony/mailer": "5.4"
     }
 }
