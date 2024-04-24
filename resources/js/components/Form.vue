@@ -25,7 +25,7 @@
             <span id="span">Odeslat</span>
         </button>
 
-        <div class="success" id="success-alert"><p>Vaše zpráva byla úspěšně doručena! Brzy Vám ozveme.</p></div>
+        <div class="success" id="success-alert"><p>Vaše zpráva byla úspěšně doručena! Brzy se Vám ozveme.</p></div>
         <div class="error required" id="error-alert"></div>
     </form>
 </template>

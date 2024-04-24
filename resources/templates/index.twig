@@ -31,7 +31,7 @@
         <div id="app">
             <nav>
                 <ul class="nav-content">
-                    <li><a href="#how-it-works">nabídka</a></li>
+                    <li><a href="#how-it-works" onclick="scrollToSection(event, 'how-it-works')">nabídka</a></li>
                     <li><a href="#gallery">realizace</a></li>
                     <li><a href="#contact">kontakt</a></li>
                     <li><a href="#form">poptejte nás</a></li>
@@ -165,7 +165,7 @@
                             <h2>Sledujte nás:</h2>
     
                             <div>   
-                                <p>Na faceboku a instagramu:</p>
+                                <p>Na Facebooku a Instagramu:</p>
     
                                 <div class="wrapper">
                                     <a href="https://www.facebook.com/profile.php?id=61550510406423" target="blank">
@@ -190,3 +190,17 @@
 </html>
 <!-- WAITING FOR ASSETS -->
 <script src="{{ asset('js/app.js') }}"></script>
+<script>
+    function scrollToSection(event, sectionId) {
+        event.preventDefault(); // Prevent default anchor link behavior
+        var section = document.getElementById(sectionId);
+        if (section) {
+            var offset = 48; // Adjust this value to your desired offset
+            var sectionPosition = section.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({
+                top: sectionPosition,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
